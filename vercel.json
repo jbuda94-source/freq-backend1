@@ -1,1 +1,14 @@
-{}
+{
+  "version": 2,
+  "functions": {
+    "api/events.js": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/events",
+      "schedule": "0 12 * * *"
+    }
+  ]
+}
