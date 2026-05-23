@@ -64,8 +64,6 @@ function parseEvents(html, regionName) {
 
     const dateStr = dateMatch[1].replace(/\//g, "-");
     const [yr, mo, dy] = dateStr.split("-").map(Number);
-    const eventDate = new Date(yr, mo - 1, dy);
-    if (eventDate < today) continue;
 
     // Get all TD contents
     const tds = [];
